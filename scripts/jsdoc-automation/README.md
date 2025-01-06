@@ -2,10 +2,10 @@
 - https://github.com/elizaOS/eliza/issues/1110
 
 ## Set up
-- Set GH_PAT & OPENAI_API_KEY in github actions as env variables
+- Set GH_PAT & OPENAI_API_KEY in GitHub actions as env variables
 
 ## Summary
-- To only scan files in a PR, ensure the files have been merged into the base branch (defaults to develop), and provide the PR number in the github Action input
+- To only scan files in a PR, ensure the files have been merged into the base branch (defaults to develop), and provide the PR number in the GitHub Action input
 - `root_directory` is still enforced when scanning a PR
 - To scan a provided directory set `root_directory` and leave the PR number empty
 
@@ -23,7 +23,7 @@ The workflow can be triggered manually using the `workflow_dispatch` event, whic
 
 - `root_directory` (required): Only scans files in this directory.
   - Description: Target directory relative to repository root (e.g., packages/core/src)
-  - Default: `packages/core/src/test_resources` - arbitrarily chose this because its small
+  - Default: `packages/core/src/test_resources` - arbitrarily chose this because it's small
 
 - `excluded_directories` (required): Directories to exclude from scanning.
   - Description: Comma-separated list of directories to exclude, relative to root_directory
